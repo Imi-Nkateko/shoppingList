@@ -28,5 +28,5 @@ addItemBtn.addEventListener("click",  () => {
         listDisplay.removeChild(listItem)
     })
 
-
+    inputEl.focus()
 })
