@@ -10,4 +10,23 @@
 const listDisplay = document.querySelector("ul")
 const inputEl = document.querySelector("input")
 const addItemBtn = document.querySelector("button")
+console.log(addItemBtn)
 
+// Create a function that will run in response to the button being clicked
+addItemBtn.addEventListener("click",  () => {
+    inputEl.placeholder = ""
+    let inputValue = inputEl.value
+
+    let listItem = document.createElement("li")
+    listItem.innerHTML = `<li>${inputValue} <button class="delete-btn">Delete</button></li>`
+
+    listDisplay.appendChild(listItem)
+
+
+    let deleteBtn = listItem.querySelector(".delete-btn");
+    deleteBtn.addEventListener("click", () => {
+        listDisplay.removeChild(listItem)
+    })
+
+
+})
