@@ -8,7 +8,7 @@
 
 // Create three variables that hold references to the list (<ul>), <input>, and <button> elements.
 const listDisplay = document.querySelector("ul")
-const inputEl = document.querySelector("input")
+const inputEl = document.querySelector("#item")
 const addItemBtn = document.querySelector("button")
 console.log(addItemBtn)
 
